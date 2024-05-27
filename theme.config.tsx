@@ -1,3 +1,4 @@
+import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
@@ -43,7 +44,7 @@ const config: DocsThemeConfig = {
 			locale: 'tr',
 			name: 'Türkçe',
 		},
-	],
+	]
 };
 
 export default config;
