@@ -1,15 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { DocsThemeConfig } from 'nextra-theme-docs';
+import { useRouter } from 'nextra/hooks';
 
 const config: DocsThemeConfig = {
-	logo: (
-		<img
-			src="norilogo.png"
-			style={{
-				width: 150,
-			}}
-		/>
-	),
+	logo: () => {
+		const router = useRouter();
+		return (
+			<a href={`/${router.locale}`}>
+				<img
+					src="/norilogo.png"
+					style={{
+						width: 150,
+					}}
+				/>
+			</a>
+		);
+	},
 	chat: {
 		link: 'https://discord.gg/H3hu5V3wkP',
 	},
@@ -27,7 +33,7 @@ const config: DocsThemeConfig = {
 			<link rel="shortcut icon" href="noriicon.png" type="image/x-icon" />
 		</>
 	),
-	logoLink: '/norilogo.png',
+	logoLink: false,
 	editLink: {
 		component: () => <></>,
 		content: '',
@@ -44,7 +50,7 @@ const config: DocsThemeConfig = {
 			locale: 'tr',
 			name: 'Türkçe',
 		},
-	]
+	],
 };
 
 export default config;
