@@ -30,7 +30,7 @@ const config: DocsThemeConfig = {
 	},
 	head: (
 		<>
-			<link rel="shortcut icon" href="noriicon.png" type="image/x-icon" />
+			<link rel="shortcut icon" href="/noriicon.png" type="image/x-icon" />
 		</>
 	),
 	logoLink: false,
@@ -45,6 +45,14 @@ const config: DocsThemeConfig = {
 		{
 			locale: 'en',
 			name: 'English',
+		},
+		{
+			locale: 'es',
+			name: 'Español',
+		},
+		{
+			locale: 'fr',
+			name: 'Français',
 		},
 		{
 			locale: 'tr',

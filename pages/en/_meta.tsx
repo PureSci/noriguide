@@ -1,5 +1,5 @@
 export default {
-	index: 'Introduction',
-	another: 'Another Page',
-	advanced: 'Advanced (A Folder)',
+	index: 'Welcome',
+	customization: 'Customization',
+	about: 'About',
 };
